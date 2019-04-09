@@ -15,6 +15,8 @@
 		ED85DF64225D042C00749245 /* coursesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF63225D042C00749245 /* coursesUITests.swift */; };
 		ED85DF74225D081800749245 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF73225D081800749245 /* CoursesTableViewController.swift */; };
 		ED85DF76225D086D00749245 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF75225D086D00749245 /* CourseTableViewCell.swift */; };
+		ED85DF78225D150800749245 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF77225D150800749245 /* Course.swift */; };
+		ED85DF7A225D15E400749245 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF79225D15E400749245 /* CourseStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ED85DF65225D042C00749245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED85DF73225D081800749245 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		ED85DF75225D086D00749245 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		ED85DF77225D150800749245 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		ED85DF79225D15E400749245 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,13 @@
 		ED85DF42225D042A00749245 /* courses */ = {
 			isa = PBXGroup;
 			children = (
+				ED85DF7D225D161A00749245 /* Controller */,
+				ED85DF7C225D161400749245 /* View */,
+				ED85DF7B225D160400749245 /* Model */,
 				ED85DF43225D042A00749245 /* AppDelegate.swift */,
-				ED85DF47225D042A00749245 /* Main.storyboard */,
 				ED85DF4A225D042B00749245 /* Assets.xcassets */,
 				ED85DF4C225D042B00749245 /* LaunchScreen.storyboard */,
 				ED85DF4F225D042B00749245 /* Info.plist */,
-				ED85DF73225D081800749245 /* CoursesTableViewController.swift */,
-				ED85DF75225D086D00749245 /* CourseTableViewCell.swift */,
 			);
 			path = courses;
 			sourceTree = "<group>";
@@ -126,6 +130,32 @@
 				ED85DF65225D042C00749245 /* Info.plist */,
 			);
 			path = coursesUITests;
+			sourceTree = "<group>";
+		};
+		ED85DF7B225D160400749245 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED85DF77225D150800749245 /* Course.swift */,
+				ED85DF79225D15E400749245 /* CourseStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED85DF7C225D161400749245 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED85DF47225D042A00749245 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED85DF7D225D161A00749245 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED85DF73225D081800749245 /* CoursesTableViewController.swift */,
+				ED85DF75225D086D00749245 /* CourseTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED85DF78225D150800749245 /* Course.swift in Sources */,
 				ED85DF74225D081800749245 /* CoursesTableViewController.swift in Sources */,
 				ED85DF44225D042A00749245 /* AppDelegate.swift in Sources */,
+				ED85DF7A225D15E400749245 /* CourseStore.swift in Sources */,
 				ED85DF76225D086D00749245 /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
