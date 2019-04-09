@@ -1,6 +1,6 @@
 # Cursos
 
-O projeto consiste em um aplicativo iOS que exibe uma lista de cursos e mais detalhes sobre cada um deles.
+O projeto consiste em um aplicativo iOS que exibe uma lista de cursos e mais detalhes sobre cada um deles, como título do curso, nome do instrutor e a descrição do curso.
 ### Como executar o projeto
 
 Para executar o projeto rode no terminal os seguintes comandos:
