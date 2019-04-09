@@ -17,6 +17,7 @@
 		ED85DF76225D086D00749245 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF75225D086D00749245 /* CourseTableViewCell.swift */; };
 		ED85DF78225D150800749245 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF77225D150800749245 /* Course.swift */; };
 		ED85DF7A225D15E400749245 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF79225D15E400749245 /* CourseStore.swift */; };
+		ED85DF7F225D1A2300749245 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DF7E225D1A2300749245 /* CourseDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		ED85DF75225D086D00749245 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		ED85DF77225D150800749245 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		ED85DF79225D15E400749245 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
+		ED85DF7E225D1A2300749245 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				ED85DF73225D081800749245 /* CoursesTableViewController.swift */,
 				ED85DF75225D086D00749245 /* CourseTableViewCell.swift */,
+				ED85DF7E225D1A2300749245 /* CourseDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				ED85DF74225D081800749245 /* CoursesTableViewController.swift in Sources */,
 				ED85DF44225D042A00749245 /* AppDelegate.swift in Sources */,
 				ED85DF7A225D15E400749245 /* CourseStore.swift in Sources */,
+				ED85DF7F225D1A2300749245 /* CourseDetailViewController.swift in Sources */,
 				ED85DF76225D086D00749245 /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
