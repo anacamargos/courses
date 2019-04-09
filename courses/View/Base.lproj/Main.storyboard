@@ -80,6 +80,9 @@
                                             <constraint firstAttribute="height" constant="144" id="aOS-MQ-dx2"/>
                                         </constraints>
                                         <state key="normal" image="play"/>
+                                        <connections>
+                                            <action selector="playButtonDidTap" destination="cGC-pV-MQ3" eventType="touchUpInside" id="tJw-jC-d4g"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a Swift Developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN4-zS-E1H">
                                         <rect key="frame" x="20" y="244" width="374" height="104"/>
@@ -97,6 +100,9 @@
                                         <state key="normal" title="Join">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="joinButtonDidTap" destination="cGC-pV-MQ3" eventType="touchUpInside" id="yak-yJ-W42"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPr-Np-ywX">
                                         <rect key="frame" x="20" y="432" width="374" height="284"/>
