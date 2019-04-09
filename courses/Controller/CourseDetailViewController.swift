@@ -14,11 +14,16 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var courseTitleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var featuredImageView: UIImageView!
+    
+    var currentCourse: Course!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        courseTitleLabel.text = currentCourse.title
+        descriptionTextView.text = currentCourse.description
+        joinCourseButton.setTitle("Join \(currentCourse.instructor)", for: .normal)
+        featuredImageView.image = currentCourse.featuredImage
     }
     
 }

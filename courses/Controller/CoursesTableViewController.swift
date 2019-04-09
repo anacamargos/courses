@@ -9,6 +9,9 @@
 import UIKit
 
 class CoursesTableViewController: UITableViewController {
+    
+    var courses = CourseStore.downloadNewCourses()
+    var selectedCourse: Course!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,20 +49,21 @@ class CoursesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            print("0")
-            performSegue(withIdentifier: "showDetails", sender: nil)
+            selectedCourse = courses[0]
         case 1:
-            print("1")
+            selectedCourse = courses[1]
         case 2:
-            print("2")
+            selectedCourse = courses[2]
         default:
             print("ta no default")
         }
+        performSegue(withIdentifier: "showDetails", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
-            
+            let courseDetailVC = segue.destination as! CourseDetailViewController
+            courseDetailVC.currentCourse = selectedCourse
         }
     }
 }
